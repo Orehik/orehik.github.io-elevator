@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Elevator</title>
+</head>
+<body>
+  <header>
+    <form action="#" name="countFloors">
+      <label for="count">Количество этажей</label>
+      <input type="number" name="count" min="3" max="10">
+      <button type="submit">Построить!</button>
+      <button onclick="document.location='/'">Сбросить</button>
+    </form>
+  </header>
+  <main>
+    <table id="building">
+      <tr class="floor">
+        <td class="corridor" data-number="3"></td>
+        <td class="mine"></td>
+        <td class="button"><div></div></td>
+      </tr>
+      <tr class="floor">
+        <td class="corridor" data-number="2"></td>
+        <td class="mine"></td>
+        <td class="button"><div></div></td>
+      </tr>
+      <tr class="floor">
+        <td class="corridor" data-number="1" data-mark="*"></td>
+        <td class="mine"></td>
+        <td class="button"><div></div></td>
+      </tr>
+    </table>
+    <div id="elevator"></div>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>

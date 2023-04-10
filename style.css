@@ -1,0 +1,89 @@
+form {
+  width: 360px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#building {
+  border-collapse: collapse;
+  position: absolute;
+}
+
+.floor {
+  height: 150px;
+  background-color: #fdf7e5;
+  border: 3px solid #dfbc82;
+}
+
+.corridor:first-child {
+  width: 200px;
+}
+
+.corridor::after {
+  content: attr(data-mark);
+  font-size: 25px;
+  color: #c18b8e;
+}
+
+.corridor::before {
+  content: attr(data-number);
+  font-size: 25px;
+  margin: 0 0 0 10px;
+  color: #c18b8e;
+}
+
+.button{
+  width: 100px;
+}
+
+.button div {
+  width: 7px;
+  height: 7px;
+  margin: 0 0 0 10px;
+  border-radius: 50%;
+  border: 2px solid;
+  transform: rotate(75deg);
+  background-color: white;
+  border-color: #957e57 #957e57 #dfbc82 #dfbc82;
+}
+
+.floor:nth-child(2n) {
+  background-color: #fffbef;
+}
+
+.mine {
+  width: 60px;
+  border: 3px dashed #dfbc82;
+}
+
+#elevator {
+  position: relative;
+  top: 303px;
+  left: 50px;
+  width: 55px;
+  height: 141px;
+  border-radius: 15px;
+  background-color: white;
+  border: 3px solid black;
+}
+
+@media (max-width: 370px) {
+  #elevator {
+    width: 35px;
+    left: 0px;
+  }
+
+  .mine {
+    width: 45px;
+  }
+
+  .corridor:first-child {
+    width: 100px;
+  }
+}
