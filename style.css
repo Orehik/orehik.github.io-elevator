@@ -86,4 +86,9 @@ main {
   .corridor:first-child {
     width: 100px;
   }
+
+  form {
+    width: 280px;
+    height: 50px;
+  }
 }
